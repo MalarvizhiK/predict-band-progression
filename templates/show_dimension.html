@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show all employees eligible for band progression</title>
+</head>
+<body>
+<h3>List of all employees eligible for band progression:</h3>
+<h3>{{ employees[0].dimension }} Dimension</h3>
+
+<table border="1">
+    <tr>
+        <th align="center">Employee Id</th>
+		<th align="center">Recommended Promotion Band</th>
+    </tr>
+    {% for employee in employees %}
+    <tr>
+        <td align="center">{{ employee.empid }}</td>
+        <td align="center">{{ employee.band }}</td>
+	</tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
