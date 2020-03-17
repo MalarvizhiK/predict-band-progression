@@ -21,6 +21,28 @@ In this hypothetical example, we have a dataset of 70 employees. The data is col
  * Debug mode: off  
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)  
   
-4. Enter http://127.0.0.1:5000/  in browser:  
+4. Enter http://127.0.0.1:5000/  in browser:    
 
+   Following are the endpoints of this application:
 
+   a) Finding band progression for a particular employee:    
+      http://127.0.0.1:5000/find_progression/110    
+      ![Find Progression of an employee](images/find_progression.png)
+
+    
+   b) Finding band progression results of all employees:      
+      http://127.0.0.1:5000/   
+      ![Results of all employees](images/results_endpoint.png)
+      
+   c) Finding band progression results for Business dimension of all employees:   
+      http://127.0.0.1:5000/business    
+     ![Business Dimension of all employees](images/business_endpoint.png)
+     
+   d) Finding band progression results for Skills dimension of all employees:   
+      http://127.0.0.1:5000/skills  
+      ![Skills Dimension of all employees](images/skills_endpoint.png)
+    
+   e) Finding band progression results for Innovation dimension of all employees:   
+      http://127.0.0.1:5000/innovation  
+      ![Innovation Dimension of all employees](images/innovation_endpoint.png)
+      
