@@ -9,6 +9,12 @@ In this hypothetical example, we have a dataset of 70 employees. The data is col
 
 Machine learning model is using K-means clustering algorithm to cluster the work done by all employees. We have created 5 clusters for 5 bands like Band 10, Band 9, Band 8, Band 7, Band 6. The decision tree algorithm gets employees from each of the cluster, and predicts whether an employee is eligible for band progression or not. In each of the cluster, we fetch the highest band and check whether other employees in the cluster have the experience to get promoted to the next band. Say, if an employee id 110 whose current band is 9 and he is clustered along with other employees whose band is 10, then it means that he is performing the job of band 10. The decision tree algorithm is trained with dataset SampleProgressionData.xlsx where we fed all the combinations where an employee is eligible for progression. Based on the training data, Decision Tree Algorithm predicts whether an employee is eligible for band progression or not.      
 
+#### Following are the team members who have contributed to this project:
+
+Malarvizhi Kandasamy, Team lead, IBM (k.malarvizhi@in.ibm.com)
+Prasad Krishnegowda, Software Engineer, IBM (pkrishn1@in.ibm.com)
+Pinky Bhargava, Software Engineer, IBM (pinky.bhargava@in.ibm.com)
+Sakthi Saravanan Shanmugam, Software Engineer, IBM (sakshan1@in.ibm.com)
 
 #### Steps to run the application:
 1. Git clone the application.  
