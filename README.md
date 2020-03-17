@@ -57,4 +57,6 @@ The application can be run as a Jupyter notebook as well. Enter below command in
     
  ![jupyter notebook](images/jupyter_notebook.png)
 
- 
+
+ Here, you can find the k-means clustering plot for 5 clusters as below:   
+![k-means plot](images/k-means-plot.png)
