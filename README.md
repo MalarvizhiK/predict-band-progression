@@ -7,20 +7,20 @@ This application is a recommendation engine that helps a manager to find where t
 In this hypothetical example, we have a dataset of 70 employees. The data is collected from github, JIRA, and other IBM internal tools to capture the work that he has performed. The collected data is normalised to plot and predict the results according to the requirements of machine learning algorithm. We have categorized data for different levels of employees based on their work load. In every dataset, you can find the various types of assessment in Sheet 1. Sheet 2 contains the employees and the various assessment types, they have worked. 
 <br/>
 
-<h3>Steps to run the application:<h3>
-1. Git clone the application.
-2. Install python3. 
-3. Run the application as below:
-  python3 flask_main.py
+#### Steps to run the application:
+1. Git clone the application.  
+2. Install python3.   
+3. Run the application as below:  
+  python3 flask_main.py  
 
-You will get the ouput as below:
-* Serving Flask app "flask_main" (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+You will get the ouput as below:  
+* Serving Flask app "flask_main" (lazy loading)  
+ * Environment: production  
+   WARNING: This is a development server. Do not use it in a production deployment.  
+   Use a production WSGI server instead.  
+ * Debug mode: off  
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)  
   
-4. Enter http://127.0.0.1:5000/  in browser:
+4. Enter http://127.0.0.1:5000/  in browser:  
 
 
