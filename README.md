@@ -11,10 +11,10 @@ Machine learning model is using K-means clustering algorithm to cluster the work
 
 #### Following are the team members who have contributed to this project:
 
-Malarvizhi Kandasamy, Team lead, IBM (k.malarvizhi@in.ibm.com)
-Prasad Krishnegowda, Software Engineer, IBM (pkrishn1@in.ibm.com)
-Pinky Bhargava, Software Engineer, IBM (pinky.bhargava@in.ibm.com)
-Sakthi Saravanan Shanmugam, Software Engineer, IBM (sakshan1@in.ibm.com)
+Malarvizhi Kandasamy, Team lead, IBM (k.malarvizhi@in.ibm.com)  
+Prasad Krishnegowda, Software Engineer, IBM (pkrishn1@in.ibm.com)  
+Pinky Bhargava, Software Engineer, IBM (pinky.bhargava@in.ibm.com)  
+Sakthi Saravanan Shanmugam, Software Engineer, IBM (sakshan1@in.ibm.com)  
 
 #### Steps to run the application:
 1. Git clone the application.  
