@@ -52,8 +52,8 @@ Machine learning model is using K-means clustering algorithm to cluster the work
 
 The application can be run as a Jupyter notebook as well. Enter below command in your command prompt or in Watson Studio, open this notebook.  
 
-    > jupyter notebook Employee clustering.ipynb  
+    > jupyter notebook Employee clustering.ipynb    
     
-    ![jupyter notebook](images/jupyter_notebook.png)
+ ![jupyter notebook](images/jupyter_notebook.png)
 
  
