@@ -6,12 +6,14 @@ This application is a recommendation engine that helps a manager to find where t
 <br/>
 In this hypothetical example, we have a dataset of 70 employees. The data is collected from github, JIRA, and other IBM internal tools to capture the work that he has performed. The collected data is normalised to plot and predict the results according to the requirements of machine learning algorithm. We have categorized data for different levels of employees based on their work load. In every dataset, you can find the various types of assessment in Sheet 1. Sheet 2 contains the employees and the various assessment types, they have worked. 
 <br/>
+Machine learning model is using K-means clustering algorithm to cluster the work done by all employees. We have created 5 clusters for 5 bands like Band 10, Band 9, Band 8, Band 7, Band 6. The decision tree algorithm gets employees from each of the cluster, and predicts whether an employee is eligible for band progression or not. In each of the cluster, we fetch the highest band and check whether other employees in the cluster have the experience to get promoted to the next band. Say, if an employee id 110 whose current band is 9 and he is clustered along with other employees whose band is 10, then it means that he is performing the job of band 10. The decision tree algorithm is trained with dataset SampleProgressionData.xlsx where we fed all the combinations where an employee is eligible for progression. Based on the training data, Decision Tree Algorithm predicts whether an employee is eligible for band progression or not.    
+<br/>
 
 #### Steps to run the application:
 1. Git clone the application.  
 2. Install python3.   
 3. Run the application as below:  
-    >> python3 flask_main.py  
+    > python3 flask_main.py  
 
  You will get the ouput as below:  
  * Serving Flask app "flask_main" (lazy loading)  
@@ -21,6 +23,37 @@ In this hypothetical example, we have a dataset of 70 employees. The data is col
  * Debug mode: off  
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)  
   
-4. Enter http://127.0.0.1:5000/  in browser:  
+4. Enter http://127.0.0.1:5000/  in browser:    
 
+   Following are the endpoints of this application:
 
+   a) Finding band progression for a particular employee:    
+      http://127.0.0.1:5000/find_progression/110    
+      ![Find Progression of an employee](images/find_progression.png)
+
+    
+   b) Finding band progression results of all employees:      
+      http://127.0.0.1:5000/   
+      ![Results of all employees](images/results_endpoint.png)
+      
+   c) Finding band progression results for Business dimension of all employees:   
+      http://127.0.0.1:5000/business    
+     ![Business Dimension of all employees](images/business_endpoint.png)
+     
+   d) Finding band progression results for Skills dimension of all employees:   
+      http://127.0.0.1:5000/skills  
+      ![Skills Dimension of all employees](images/skills_endpoint.png)
+    
+   e) Finding band progression results for Innovation dimension of all employees:   
+      http://127.0.0.1:5000/innovation  
+      ![Innovation Dimension of all employees](images/innovation_endpoint.png)
+      
+#### Steps to python notebook:  
+
+The application can be run as a Jupyter notebook as well. Enter below command in your command prompt or in Watson Studio, open this notebook.  
+
+    > jupyter notebook Employee clustering.ipynb  
+    
+    ![jupyter notebook](images/jupyter_notebook.png)
+
+ 
