@@ -11,10 +11,10 @@ In this hypothetical example, we have a dataset of 70 employees. The data is col
 1. Git clone the application.  
 2. Install python3.   
 3. Run the application as below:  
-  python3 flask_main.py  
+    >> python3 flask_main.py  
 
-You will get the ouput as below:  
-* Serving Flask app "flask_main" (lazy loading)  
+ You will get the ouput as below:  
+ * Serving Flask app "flask_main" (lazy loading)  
  * Environment: production  
    WARNING: This is a development server. Do not use it in a production deployment.  
    Use a production WSGI server instead.  
