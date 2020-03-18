@@ -105,7 +105,7 @@ The application can be run as a Jupyter notebook as well. Enter below command in
 
 #### Steps to push the application to IBM Cloud
 
-The application is deployed as an app manifest by following the below document:  
+The application is deployed with app manifest by following the below document:  
 https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html  
 
 1. Login to IBM Cloud.  
