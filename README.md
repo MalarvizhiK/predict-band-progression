@@ -30,7 +30,9 @@ Please read steps below to push the app to cloud.
 
 20 - Band 7s - Employee ID: 131-150, (149, 150 are eligible for Progression)   
 
-18 - Band 6s - Employee ID: 151-168, (151, 152 are eligible for Progression)    
+18 - Band 6s - Employee ID: 151-168, (151, 152 are eligible for Progression)  
+
+The dataset is fetched from **IBM Cloud Object Storage** for the application that is running in Cloud.   
 
 #### Following are the team members who have contributed to this project:  
 
@@ -102,6 +104,8 @@ The application can be run as a Jupyter notebook as well. Enter below command in
 ![k-means plot](images/k-means-plot.png)  
 
 #### Steps to push the application to IBM Cloud
+
+The cloud foundry application is connected to IBM Cloud Object Storage where the dataset for different dimension is stored. 
 
 1. Login to IBM Cloud.  
    > ibmcloud login --sso
