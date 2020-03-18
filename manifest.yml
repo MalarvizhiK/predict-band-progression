@@ -1,0 +1,8 @@
+applications:
+  - name: predict-band-progression
+    random-route: true
+    memory: 256M
+    buildpacks:
+    - python_buildpack
+    command: python flask_main.py
+    timeout: 600
