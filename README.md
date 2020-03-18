@@ -66,7 +66,7 @@ Malars-MacBook-Pro-2:predict-band-progression malark$ source env/bin/activate
       http://127.0.0.1:5000/innovation  
       ![Innovation Dimension of all employees](images/innovation_endpoint.png)
       
-#### Steps to python notebook:  
+#### Steps to run the application in python notebook
 
 The application can be run as a Jupyter notebook as well. Enter below command in your command prompt or in Watson Studio, open this notebook.  
 
@@ -76,4 +76,61 @@ The application can be run as a Jupyter notebook as well. Enter below command in
 
 
  Here, you can find the k-means clustering plot for 5 clusters as below:   
-![k-means plot](images/k-means-plot.png)
+![k-means plot](images/k-means-plot.png)  
+
+#### Steps to push the application to IBM Cloud
+
+1. Login to IBM Cloud.  
+   > ibmcloud login --sso
+
+2. Setup the target CF and resource groups.  
+   > ibmcloud target --cf  
+   
+  Malars-MacBook-Pro-2:predict-band-progression malark$ ibmcloud target --cf  
+  Targeted Cloud Foundry (https://api.us-south.cf.cloud.ibm.com)  
+  
+  Targeted org k.malarvizhi@in.ibm.com  
+
+  Targeted space dev  
+
+
+                      
+  API endpoint:      https://cloud.ibm.com     
+  Region:            us-south     
+  User:              K.MALARVIZHI@IN.IBM.COM     
+  
+ 3. Setup the target resource groups. 
+ 
+   > ibmcloud target -g default  
+   
+Targeted resource group default  
+
+
+                      
+API endpoint:      https://cloud.ibm.com     
+Region:            us-south     
+User:              K.MALARVIZHI@IN.IBM.COM     
+
+4. Push the application to ibmcloud.      
+   > ibmcloud cf push  
+   
+  (env) Malars-MacBook-Pro-2:predict-band-progression malark$ ibmcloud cf push   
+  
+Invoking 'cf push'...
+
+Pushing from manifest to org k.malarvizhi@in.ibm.com / space dev as k.malarvizhi@in.ibm.com...  
+Using manifest file /Users/malark/content/predict-band-progression/manifest.yml  
+Getting app info...  
+Updating app with these attributes...  
+  name:                predict-band-progression  
+  path:                /Users/malark/content/predict-band-progression  
+  disk quota:          1G  
+  health check type:   port  
+  instances:           1  
+  memory:              128M  
+  stack:               cflinuxfs3  
+  routes:  
+    predict-band-progression-wise-ardvark.mybluemix.net  
+
+Updating app predict-band-progression...  
+
