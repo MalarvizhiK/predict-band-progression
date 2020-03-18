@@ -15,12 +15,25 @@ The machine learning model is based on K-means* Data Clustering and Decision Tre
 
 Machine learning model is using K-means clustering algorithm to cluster the work done by all employees. We have created 5 clusters for 5 bands like Band 10, Band 9, Band 8, Band 7, Band 6. The decision tree algorithm gets employees from each of the cluster, and predicts whether an employee is eligible for band progression or not. In each of the cluster, we fetch the highest band and check whether other employees in the cluster have the experience to get promoted to the next band. Say, if an employee id 110 whose current band is 9 and he is clustered along with other employees whose band is 10, then it means that he is performing the job of band 10. The decision tree algorithm is trained with dataset SampleProgressionData.xlsx where we fed all the combinations where an employee is eligible for progression. Based on the training data, Decision Tree Algorithm predicts whether an employee is eligible for band progression or not.   
 
-The application is deployed and running in cloud:  
-https://predict-band-progression-wise-ardvark.mybluemix.net/  
+The application is deployed and running in cloud:    
+https://predict-band-progression-wise-ardvark.mybluemix.net/    
 
-Please read steps below to push the app to cloud.  
+Please read steps below to push the app to cloud.    
 
-#### Following are the team members who have contributed to this project:
+Business organization - dataset : 70 samples  
+----------------------------------------------    
+
+2 - higher Band 10 (Role models), Employee ID : 199, 200  
+
+10 - Band 9s - Employee ID: 101-110, (110 is eligible for Progression)   
+
+20 - Band 8s - Employee ID: 111-130, (111, 112 are eligible for Progression)    
+
+20 - Band 7s - Employee ID: 131-150, (149, 150 are eligible for Progression)   
+
+18 - Band 6s - Employee ID: 151-168, (151, 152 are eligible for Progression)    
+
+#### Following are the team members who have contributed to this project:  
 
 Malarvizhi Kandasamy, Team lead, IBM (k.malarvizhi@in.ibm.com)  
 Prasad Krishnegowda, Software Engineer, IBM (pkrishn1@in.ibm.com)  
