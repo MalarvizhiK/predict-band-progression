@@ -105,7 +105,8 @@ The application can be run as a Jupyter notebook as well. Enter below command in
 
 #### Steps to push the application to IBM Cloud
 
-The cloud foundry application is connected to IBM Cloud Object Storage where the dataset for different dimension is stored. 
+The application is deployed as an app manifest by following the below document:  
+https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html  
 
 1. Login to IBM Cloud.  
    > ibmcloud login --sso
@@ -187,12 +188,22 @@ OK
 name                       requested state   instances   memory   disk   urls  
 predict-band-progression   started           1/1         256M     1G     predict-band-progression-wise-ardvark.mybluemix.net  
   
-7. Follow this document to connect IBM Cloud foundry app to IBM Cloud Object Storage :  
+7. The cloud foundry application is connected to IBM Cloud Object Storage where the dataset for different dimension is stored.     
+   
+   a) Follow this document to connect IBM Cloud foundry app to IBM Cloud Object Storage :  
+   Create Service Bindings:
    https://cloud.ibm.com/docs/services/cloud-object-storage?topic=cloud-object-storage-cloud-foundry  
+   
+   This requires a restaging of the application running in IBM Cloud. 
+   
+   b) IBM Client Tools:    
+    Create the service alias and service binding. 
    
    > ibmcloud resource service-alias-create predict-band-progression --instance-name Cloud Object Storage-8w  
 
-   > ibmcloud resource service-binding-create predict-band-progression predict-band-progression Reader  
+   > ibmcloud resource service-binding-create predict-band-progression predict-band-progression Reader    
+   
+   c)  
    
    
    
