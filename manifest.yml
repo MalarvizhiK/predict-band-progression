@@ -4,5 +4,5 @@ applications:
     memory: 256M
     buildpacks:
     - python_buildpack
-    command: python flask_main.py
+    command: python flask_cloud.py
     timeout: 600
