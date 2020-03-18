@@ -12,6 +12,7 @@ Machine learning model is using K-means clustering algorithm to cluster the work
 The application is deployed and running in cloud:  
 https://predict-band-progression-wise-ardvark.mybluemix.net/  
 
+Please read steps below to push the app to cloud.  
 
 #### Following are the team members who have contributed to this project:
 
@@ -154,4 +155,13 @@ Updating app predict-band-progression...
 
 (env) Malars-MacBook-Pro-2:predict-band-progression malark$ ibmcloud cf logs predict-band-progression --recent   
 
+6. List all apps deployed in cloud:  
+(env) Malars-MacBook-Pro-2:predict-band-progression malark$ ibmcloud cf apps  
+Invoking 'cf apps'...  
+
+Getting apps in org k.malarvizhi@in.ibm.com / space dev as k.malarvizhi@in.ibm.com...  
+OK    
+
+name                       requested state   instances   memory   disk   urls  
+predict-band-progression   started           1/1         256M     1G     predict-band-progression-wise-ardvark.mybluemix.net  
 
