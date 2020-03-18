@@ -3,4 +3,5 @@ pandas
 sklearn
 plotly
 xlrd
+ibm-cos-sdk
 
