@@ -19,7 +19,18 @@ Sakthi Saravanan Shanmugam, Software Engineer, IBM (sakshan1@in.ibm.com)
 #### Steps to run the application:
 1. Git clone the application.  
 2. Install python3.   
-3. Run the application as below:  
+3. Setup a new Virtual Environment:    
+   > python3 -m venv env  
+Malars-MacBook-Pro-2:predict-band-progression malark$ python3 -m venv env  
+4. Activate the virtual environment.    
+   > source env/bin/activate   
+Malars-MacBook-Pro-2:predict-band-progression malark$ source env/bin/activate  
+(env) Malars-MacBook-Pro-2:predict-band-progression malark$ which python  
+
+5. Install the requirements.txt.   
+   > pip3 install -r requirements.txt  
+
+6. Run the application as below:  
     > python3 flask_main.py  
 
  You will get the ouput as below:  
