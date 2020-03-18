@@ -132,7 +132,7 @@ Updating app with these attributes...
   disk quota:          1G  
   health check type:   port  
   instances:           1  
-  memory:              128M  
+  memory:              256M  
   stack:               cflinuxfs3  
   routes:  
     predict-band-progression-wise-ardvark.mybluemix.net  
@@ -155,7 +155,7 @@ Updating app predict-band-progression...
 
 (env) Malars-MacBook-Pro-2:predict-band-progression malark$ ibmcloud cf logs predict-band-progression --recent   
 
-6. List all apps deployed in cloud:  
+6. List all apps deployed in cloud:    
 (env) Malars-MacBook-Pro-2:predict-band-progression malark$ ibmcloud cf apps  
 Invoking 'cf apps'...  
 
