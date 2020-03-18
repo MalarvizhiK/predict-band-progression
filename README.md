@@ -20,8 +20,7 @@ https://predict-band-progression-wise-ardvark.mybluemix.net/
 
 Please read steps below to push the app to cloud.    
 
-Business organization - dataset : 70 samples  
-----------------------------------------------    
+#### Business organization - dataset : 70 samples  
 
 2 - higher Band 10 (Role models), Employee ID : 199, 200  
 
