@@ -1,5 +1,5 @@
 from flask import Flask, redirect, url_for, request, render_template, make_response, session, abort, flash
-from predict_band_progression import algorithm
+from predict_band_ml import algorithm
 import os
 
 app = Flask(__name__)
