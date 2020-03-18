@@ -4,11 +4,11 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 # Plotly requires pip install plotly
 import plotly.graph_objs as go
-from plotly.offline import init_notebook_mode, iplot
+# from plotly.offline import init_notebook_mode, iplot
 #Import the DecisionTreeClassifier
 from sklearn.tree import DecisionTreeClassifier
 import pandas as pd
-init_notebook_mode()
+# init_notebook_mode()
 
 class algorithm:
     
