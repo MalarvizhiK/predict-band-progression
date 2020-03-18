@@ -186,4 +186,16 @@ OK
 
 name                       requested state   instances   memory   disk   urls  
 predict-band-progression   started           1/1         256M     1G     predict-band-progression-wise-ardvark.mybluemix.net  
+  
+7. Follow this document to connect IBM Cloud foundry app to IBM Cloud Object Storage :  
+   https://cloud.ibm.com/docs/services/cloud-object-storage?topic=cloud-object-storage-cloud-foundry  
+   
+   > ibmcloud resource service-alias-create predict-band-progression --instance-name Cloud Object Storage-8w  
+
+   > ibmcloud resource service-binding-create predict-band-progression predict-band-progression Reader  
+   
+   
+   
+
+
 
