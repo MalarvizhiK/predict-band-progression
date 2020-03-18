@@ -203,8 +203,7 @@ predict-band-progression   started           1/1         256M     1G     predict
 
    > ibmcloud resource service-binding-create predict-band-progression predict-band-progression Reader    
    
-   c)  
-   
+ 
    
    
 
