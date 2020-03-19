@@ -30,8 +30,6 @@ class algorithm:
     # k-means cluster algorithm 
     def cluster_dataset(excel_filename):
         # Importing an Excel spreadsheet with two sheets as two DataFrames
-        #df_assessment = read_excel(excel_filename, sheet_name = 0)
-        #df_response = read_excel(excel_filename, sheet_name = 1)
         if os.path.isfile(excel_filename):
             print ("File exist")
         else:
