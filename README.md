@@ -1,6 +1,6 @@
 # predict-band-progression
 
-IBM assessment tool evaluates an employee across 5 dimensions like Business, Skills, Innvovation, Customer, and Responsibility to others. Here, we have evaluated an employee across Business, Innovation and Skills dimension and recommend band progression for employees based on evaluation. The tool looks at a higher band employee as a role model and it starts clustering the performance results for each of the dimension. When the Machine Learning(ML) K-means clustering algorithm clusters the dataset, we will end up with 5 clusters for 5 bands like Band 10, Band 9, Band 8, Band 7, Band 6. When a lower level employee falls in to each of the higher bands that is above than his current band, then we recommend band progression for him. It is purely based on the work he has performed for the whole year.      
+IBM assessment tool evaluates an employee across 5 dimensions like Business, Skills, Innvovation, Customer, and Responsibility to others. Here, we have evaluated an employee across Business, Innovation and Skills dimension and recommend band progression for employees based on evaluation. The tool looks at a higher band employee as a role model and it starts clustering the performance results for each of the dimension. When the Machine Learning(ML) K-means clustering algorithm clusters the dataset, we will end up with 5 clusters for 5 bands like Band 10, Band 9, Band 8, Band 7, Band 6. When a lower level employee falls in to each of the higher bands that is above than his current band, and if the employee has the required experience, then the tool recommend band progression for him. It is purely based on the work he has performed for the whole year.      
 
 This application is a recommendation engine that helps a manager to find where their employees are placed across various dimensions. If an employee is eligible for progression then the flask based python web application can indicate where the employee stand for the checkpoint/assessment dimension.     
 
@@ -10,9 +10,6 @@ The machine learning model is based on K-means* Data Clustering and Decision Tre
 
 *K-means clustering algorithm is a data mining and machine learning tool used to cluster observations into groups of related observations without any prior knowledge of those relationships.
 *Decision Tree - the most powerful and popular tool for classification and prediction. 
-
-
-Machine learning model is using K-means clustering algorithm to cluster the work done by all employees. We have created 5 clusters for 5 bands like Band 10, Band 9, Band 8, Band 7, Band 6. The decision tree algorithm gets employees from each of the cluster, and predicts whether an employee is eligible for band progression or not. In each of the cluster, we fetch the highest band and check whether other employees in the cluster have the experience to get promoted to the next band. Say, if an employee id 110 whose current band is 9 and he is clustered along with other employees whose band is 10, then it means that he is performing the job of band 10. The decision tree algorithm is trained with dataset SampleProgressionData.xlsx where we fed all the combinations where an employee is eligible for progression. Based on the training data, Decision Tree Algorithm predicts whether an employee is eligible for band progression or not.   
 
 The application is deployed and running in cloud:    
 https://predict-band-progression-wise-ardvark.mybluemix.net/    
